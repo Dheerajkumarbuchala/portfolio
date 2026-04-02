@@ -5,32 +5,32 @@
 // ── Skill Data (edit these!) ──
 const skillData = {
   backend: [
-    { name: 'Node.js / Express', pct: 92 },
-    { name: 'Go',                pct: 85 },
-    { name: 'Python / FastAPI',  pct: 88 },
-    { name: 'REST & gRPC',       pct: 90 },
-    { name: 'Microservices',     pct: 82 },
+    { name: 'Python',                 pct: 93 },
+    { name: 'boto3 / AWS SDK',        pct: 92 },
+    { name: 'AWS Lambda',             pct: 90 },
+    { name: 'REST APIs',              pct: 85 },
+    { name: 'Automation & Scripting', pct: 88 },
   ],
-  frontend: [
-    { name: 'React / Next.js',   pct: 90 },
-    { name: 'TypeScript',        pct: 88 },
-    { name: 'CSS / Tailwind',    pct: 80 },
-    { name: 'GraphQL',           pct: 75 },
-    { name: 'WebGL / Three.js',  pct: 60 },
+  ai: [
+    { name: 'LLMs & Prompt Engineering', pct: 78 },
+    { name: 'Python AI Frameworks',      pct: 75 },
+    { name: 'AWS AI Services',           pct: 72 },
+    { name: 'Data Pipelines',            pct: 80 },
+    { name: 'MLOps',                     pct: 65 },
   ],
   cloud: [
-    { name: 'AWS (EC2, S3, Lambda)', pct: 87 },
-    { name: 'Docker / Kubernetes',   pct: 85 },
-    { name: 'CI/CD Pipelines',       pct: 88 },
-    { name: 'Terraform / IaC',       pct: 75 },
-    { name: 'Grafana / Observability', pct: 80 },
+    { name: 'AWS Lambda & Step Functions', pct: 90 },
+    { name: 'IAM & Security',              pct: 85 },
+    { name: 'CloudWatch & Monitoring',     pct: 83 },
+    { name: 'CloudFormation / IaC',        pct: 75 },
+    { name: 'VPC & Networking',            pct: 78 },
   ],
   db: [
-    { name: 'PostgreSQL',      pct: 92 },
-    { name: 'Redis',           pct: 88 },
-    { name: 'MongoDB',         pct: 80 },
-    { name: 'Elasticsearch',   pct: 72 },
-    { name: 'ClickHouse',      pct: 68 },
+    { name: 'AWS RDS & Aurora',  pct: 92 },
+    { name: 'DynamoDB',          pct: 90 },
+    { name: 'DocumentDB',        pct: 85 },
+    { name: 'PostgreSQL',        pct: 80 },
+    { name: 'Redis',             pct: 72 },
   ],
 };
 
