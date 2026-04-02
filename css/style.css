@@ -65,6 +65,18 @@ section { min-height: 100vh; position: relative; padding: 8rem 6rem; }
 .btn-outline { display: inline-flex; align-items: center; gap: 0.5rem; background: transparent; color: var(--neon); font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.9rem 2rem; text-decoration: none; border: 1px solid var(--neon); cursor: none; clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px)); transition: all 0.2s; }
 .btn-outline:hover { background: rgba(0,245,196,0.1); transform: translateY(-2px); }
 
+/* Hero Body (two-column) */
+.hero-body { display: flex; align-items: center; justify-content: space-between; gap: 4rem; width: 100%; }
+
+/* Hero Avatar */
+.hero-avatar-wrap { position: relative; flex-shrink: 0; width: 340px; height: 340px; display: flex; align-items: center; justify-content: center; }
+.hero-avatar { width: 300px; height: 300px; object-fit: cover; border-radius: 50%; border: 2px solid var(--neon); position: relative; z-index: 2; animation: avatarFloat 4s ease-in-out infinite; filter: drop-shadow(0 0 24px rgba(0,245,196,0.45)); }
+@keyframes avatarFloat { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-14px); } }
+.avatar-ring { position: absolute; border-radius: 50%; border: 1px solid rgba(0,245,196,0.25); animation: ringPulse 3s ease-in-out infinite; }
+.avatar-ring  { width: 320px; height: 320px; }
+.avatar-ring2 { width: 360px; height: 360px; border-color: rgba(123,47,255,0.2); animation-delay: 1s; animation-duration: 4s; }
+@keyframes ringPulse { 0%, 100% { transform: scale(1); opacity: 0.5; } 50% { transform: scale(1.04); opacity: 1; } }
+
 /* Hero Stats */
 .hero-stats { position: absolute; right: 6rem; bottom: 4rem; display: flex; flex-direction: column; gap: 2rem; z-index: 2; }
 .stat { text-align: right; }
@@ -174,6 +186,11 @@ footer { padding: 2rem 6rem; border-top: 1px solid var(--border); display: flex;
   section { padding: 6rem 2rem; }
   #hero { padding: 5rem 2rem 8rem; }
   .hero-stats { right: 2rem; bottom: 2rem; }
+  .hero-body { flex-direction: column-reverse; gap: 2rem; }
+  .hero-avatar-wrap { width: 220px; height: 220px; }
+  .hero-avatar { width: 200px; height: 200px; }
+  .avatar-ring  { width: 230px; height: 230px; }
+  .avatar-ring2 { width: 260px; height: 260px; }
   .about-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .skills-layout { grid-template-columns: 1fr; gap: 2rem; }
