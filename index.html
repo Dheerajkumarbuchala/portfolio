@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Chen — Software Engineer</title>
+<meta name="description" content="Software Engineer specializing in scalable systems, full-stack development, and cloud infrastructure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="noise"></div>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<nav>
+  <a href="#hero" class="logo glitch">DEV.FOLIO</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-burger" id="burger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-content">
+    <div class="status-badge">
+      <span class="status-dot"></span>
+      Available for new projects
+    </div>
+    <h1 class="hero-title">
+      <span class="line1">SOFTWARE</span>
+      <span class="line2 glitch">ENGINEER</span>
+    </h1>
+    <p class="hero-sub">
+      I architect <span class="highlight">scalable systems</span> and craft elegant code.<br>
+      Turning complex problems into clean, powerful solutions.<br>
+      <span class="highlight">Full-stack · Backend · Cloud · OSS</span>
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">VIEW WORK →</a>
+      <a href="#contact" class="btn-outline">GET IN TOUCH</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num" data-target="42">0</span><span class="stat-label">Projects Shipped</span></div>
+    <div class="stat"><span class="stat-num" data-target="5">0</span><span class="stat-label">Years Coding</span></div>
+    <div class="stat"><span class="stat-num" data-target="12">0</span><span class="stat-label">Open Source Repos</span></div>
+  </div>
+  <div class="scroll-line">SCROLL</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-tag">01 // ABOUT</div>
+  <h2 class="section-title fade-up">The <span class="accent">Architect</span><br>Behind the Code</h2>
+  <div class="about-grid fade-up">
+    <div class="about-text">
+      <p>Hey — I'm a software engineer with a passion for building <span class="hl">systems that scale</span> and products that people actually love using. I believe great software is equal parts engineering rigor and thoughtful design.</p>
+      <p>My stack spans the full spectrum — from <span class="hl">low-latency APIs</span> and distributed systems on the backend, to <span class="hl">reactive, performant UIs</span> on the front. I thrive in the space where performance meets elegance.</p>
+      <p>When I'm not shipping code, I'm contributing to open source, writing about systems design, or tinkering with side projects that might become the next thing I obsess over.</p>
+    </div>
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="t-dot"></div><div class="t-dot"></div><div class="t-dot"></div>
+        <span class="terminal-title">~/whoami</span>
+      </div>
+      <div class="terminal-body">
+        <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">whoami</span></div>
+        <div class="t-out t-success">Alex Chen — Software Engineer</div>
+        <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">cat skills.json</span></div>
+        <div class="t-out">{ "backend": ["Node.js", "Go", "Python"] }</div>
+        <div class="t-out">{ "frontend": ["React", "TypeScript", "Next.js"] }</div>
+        <div class="t-out">{ "cloud": ["AWS", "GCP", "Docker", "K8s"] }</div>
+        <div class="t-out">{ "databases": ["PostgreSQL", "Redis", "MongoDB"] }</div>
+        <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">git log --oneline -3</span></div>
+        <div class="t-out">a4f2c1d feat: shipped v2 API gateway</div>
+        <div class="t-out">89bc34e fix: resolved memory leak in worker</div>
+        <div class="t-out">22de901 perf: 3x speedup on query pipeline</div>
+        <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">_</span><span class="t-cursor"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-tag">02 // PROJECTS</div>
+  <h2 class="section-title fade-up">Selected <span class="accent">Work</span></h2>
+  <div class="projects-grid fade-up">
+    <div class="project-card">
+      <div class="project-img p1-bg"><span class="p-icon" style="color:var(--neon2)">⬡</span></div>
+      <div class="project-info">
+        <div class="project-num">PROJECT // 001</div>
+        <div class="project-name">NexusAPI Gateway</div>
+        <p class="project-desc">High-performance API gateway handling 50M+ req/day. Features rate limiting, auth, caching, and real-time analytics.</p>
+        <div class="tags"><span class="tag">GO</span><span class="tag">REDIS</span><span class="tag">GRPC</span><span class="tag">K8S</span></div>
+        <div class="project-links">
+          <a href="#" class="p-link">↗ LIVE DEMO</a>
+          <a href="https://github.com/yourusername" class="p-link" target="_blank">⌥ GITHUB</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-img p2-bg"><span class="p-icon" style="color:var(--neon)">◈</span></div>
+      <div class="project-info">
+        <div class="project-num">PROJECT // 002</div>
+        <div class="project-name">QuantumDB</div>
+        <p class="project-desc">Distributed time-series database built from scratch. ACID compliant, petabyte-scale data with millisecond queries.</p>
+        <div class="tags"><span class="tag">RUST</span><span class="tag">RAFT</span><span class="tag">ROCKSDB</span></div>
+        <div class="project-links">
+          <a href="#" class="p-link">↗ LIVE DEMO</a>
+          <a href="https://github.com/yourusername" class="p-link" target="_blank">⌥ GITHUB</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-img p3-bg"><span class="p-icon" style="color:var(--neon3)">◉</span></div>
+      <div class="project-info">
+        <div class="project-num">PROJECT // 003</div>
+        <div class="project-name">Stellr UI</div>
+        <p class="project-desc">Open-source React component library with 60+ production-ready components. 4k GitHub stars, used by 200+ companies.</p>
+        <div class="tags"><span class="tag">REACT</span><span class="tag">TS</span><span class="tag">STORYBOOK</span></div>
+        <div class="project-links">
+          <a href="#" class="p-link">↗ LIVE DEMO</a>
+          <a href="https://github.com/yourusername" class="p-link" target="_blank">⌥ GITHUB</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-tag">03 // SKILLS</div>
+  <h2 class="section-title fade-up">Technical <span class="accent">Arsenal</span></h2>
+  <div class="skills-layout fade-up">
+    <div class="skill-cats" id="skillCats">
+      <button class="skill-cat active" data-cat="backend"><span class="cat-icon">⚙</span> Backend Engineering</button>
+      <button class="skill-cat" data-cat="frontend"><span class="cat-icon">◈</span> Frontend Dev</button>
+      <button class="skill-cat" data-cat="cloud"><span class="cat-icon">⬡</span> Cloud &amp; DevOps</button>
+      <button class="skill-cat" data-cat="db"><span class="cat-icon">◉</span> Databases</button>
+    </div>
+    <div class="skill-bars" id="skillBars"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner fade-up">
+    <div class="section-tag" style="justify-content:center">04 // CONTACT</div>
+    <h2 class="big-cta">Let's Build<br><span class="accent">Something</span><br>Legendary.</h2>
+    <p class="contact-sub">Whether you have a project in mind, want to collaborate, or just want to talk tech — my inbox is always open.</p>
+    <div class="contact-links">
+      <a href="mailto:alex@dev.io" class="c-link">✉ EMAIL ME</a>
+      <a href="https://github.com/yourusername" class="c-link" target="_blank">⌥ GITHUB</a>
+      <a href="https://linkedin.com/in/yourusername" class="c-link" target="_blank">◈ LINKEDIN</a>
+      <a href="https://twitter.com/yourusername" class="c-link" target="_blank">↗ TWITTER / X</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 ALEX CHEN — BUILT WITH INTENT</span>
+  <span class="footer-status">AVAILABLE FOR HIRE ●</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
