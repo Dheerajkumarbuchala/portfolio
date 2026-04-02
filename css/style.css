@@ -72,7 +72,7 @@ section { min-height: 100vh; position: relative; padding: 8rem 6rem; }
 .stat-label { font-size: 0.65rem; color: var(--text2); letter-spacing: 0.15em; text-transform: uppercase; }
 
 /* Scroll indicator */
-.scroll-line { position: absolute; left: 6rem; bottom: 3rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; font-size: 0.6rem; letter-spacing: 0.15em; color: var(--text2); z-index: 2; }
+.scroll-line { position: absolute; left: 50%; transform: translateX(-50%); bottom: 2rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; font-size: 0.6rem; letter-spacing: 0.15em; color: var(--text2); z-index: 2; }
 .scroll-line::after { content: ''; width: 1px; height: 60px; background: linear-gradient(to bottom, var(--neon), transparent); animation: scrollDown 2s ease-in-out infinite; }
 @keyframes scrollDown { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
 
@@ -182,7 +182,6 @@ footer { padding: 2rem 6rem; border-top: 1px solid var(--border); display: flex;
   .projects-grid { grid-template-columns: 1fr; }
   .skills-layout { grid-template-columns: 1fr; gap: 2rem; }
   footer { padding: 1.5rem 2rem; flex-direction: column; gap: 0.5rem; text-align: center; }
-  .scroll-line { left: 2rem; }
   body { cursor: auto; }
   #cursor, #cursor-ring { display: none; }
 }
