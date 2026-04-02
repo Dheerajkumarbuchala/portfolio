@@ -27,7 +27,7 @@ portfolio/
 Open each file and replace the placeholder content:
 
 ### index.html
-- [ ] Your name (search "Alex Chen")
+- [ ] Your name (search "Dheeraj Kumar")
 - [ ] Hero subtitle text
 - [ ] About bio paragraphs
 - [ ] Terminal content (skills, git log)
