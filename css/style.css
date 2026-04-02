@@ -42,7 +42,7 @@ nav { position: fixed; top: 0; width: 100%; z-index: 100; padding: 1.2rem 4rem; 
 section { min-height: 100vh; position: relative; padding: 8rem 6rem; }
 
 /* Hero */
-#hero { display: flex; flex-direction: column; justify-content: center; min-height: 100vh; padding: 0 6rem 8rem; overflow: hidden; }
+#hero { display: flex; flex-direction: column; justify-content: center; min-height: 100vh; padding: 5rem 6rem 8rem; overflow: hidden; }
 .hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(0,245,196,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,245,196,0.04) 1px, transparent 1px); background-size: 60px 60px; animation: gridMove 20s linear infinite; }
 @keyframes gridMove { 0% { transform: translateY(0); } 100% { transform: translateY(60px); } }
 .hero-glow { position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(123,47,255,0.12) 0%, transparent 70%); top: -100px; right: -100px; pointer-events: none; animation: pulse 4s ease-in-out infinite alternate; }
@@ -176,7 +176,7 @@ footer { padding: 2rem 6rem; border-top: 1px solid var(--border); display: flex;
   .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 60px; left: 0; right: 0; background: var(--bg); padding: 2rem; border-bottom: 1px solid var(--border); z-index: 99; }
   .nav-burger { display: flex; }
   section { padding: 6rem 2rem; }
-  #hero { padding: 0 2rem 8rem; }
+  #hero { padding: 5rem 2rem 8rem; }
   .hero-stats { right: 2rem; bottom: 2rem; }
   .about-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
